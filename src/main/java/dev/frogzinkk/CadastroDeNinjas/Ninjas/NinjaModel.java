@@ -1,10 +1,8 @@
-package dev.frogzinkk.CadastroDeNinjas.Ninjas.Models;
+package dev.frogzinkk.CadastroDeNinjas.Ninjas;
 
-import dev.frogzinkk.CadastroDeNinjas.Missoes.Models.MissoesModel;
+import dev.frogzinkk.CadastroDeNinjas.Missoes.MissoesModel;
 import jakarta.persistence.*;
 import lombok.*;
-
-import java.util.List;
 
 @Entity
 @Table(name = "tb_cadastro")
@@ -15,13 +13,17 @@ public class NinjaModel  {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "id")
   private Long id;
 
+  @Column(name = "nome_ninja")
   private String nome;
 
-  @Column(unique = true)
+
+  @Column(name = "email_ninja",unique = true)
   private String email;
 
+  @Column(name = "idade_ninja")
   private int idade;
 
   @ManyToOne()

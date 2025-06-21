@@ -1,6 +1,6 @@
-package dev.frogzinkk.CadastroDeNinjas.Missoes.Models;
+package dev.frogzinkk.CadastroDeNinjas.Missoes;
 
-import dev.frogzinkk.CadastroDeNinjas.Ninjas.Models.NinjaModel;
+import dev.frogzinkk.CadastroDeNinjas.Ninjas.NinjaModel;
 import jakarta.persistence.*;
 import lombok.*;
 
