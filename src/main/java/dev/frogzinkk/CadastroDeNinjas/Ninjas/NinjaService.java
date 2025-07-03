@@ -38,6 +38,16 @@ public class NinjaService {
   }
 
   //Alterar dados do Ninja
+  public NinjaModel alterarNinjaId(long id){
 
+  }
+
+
+  //Deletar Ninja
+  public void deletarNinja(Long id){
+
+    ninjaRepository.deleteById(id);;
+
+  }
 
 }
